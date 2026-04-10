@@ -1,4 +1,4 @@
-  name: Debug assemble jre package
+name: Debug assemble jre package
 
 on: workflow_dispatch
 
@@ -21,7 +21,7 @@ jobs:
 
       - name: Downloading jre
         run: |
-          wget -nv https://github.com/vmnaumov/openjdk-6-armel/releases/download/jre1.0.1/jre-6-${{ env.ARCH }}.zip \
+          wget -nv https://github.com/vmnaumov/openjdk-jre/releases/download/v1.0.0/jre-6-${{ env.ARCH }}.zip \
             -O jre.zip
           unzip jre.zip
 
